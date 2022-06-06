@@ -1,9 +1,9 @@
 var mysql= require('mysql');
 var conn=mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'tecsup2022',
-    database: 'agenda',
+    host: 'SU_HOST',
+    user: 'SU_USUARIO',
+    password: 'SU_PASSWORD',
+    database: 'SU_BASEDEDATOS',
     multipleStatements: true
 });
 
