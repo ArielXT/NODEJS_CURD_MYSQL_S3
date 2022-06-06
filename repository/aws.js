@@ -7,8 +7,8 @@ class imageRepository {
     constructor(){
         
         this.s3 = new AWS.S3({
-            accessKeyId: "AKIA2XPRAPQQIBOIZBUO",
-            secretAccessKey: "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",
+            accessKeyId: "TU_ACCES_KEY_ID",
+            secretAccessKey: "TU_SECRET_ACCESS_KEY",
         });
 
     }
@@ -19,7 +19,7 @@ class imageRepository {
 
         return new Promise((resolve, reject) =>{
             const params = {
-                Bucket: 'mysqlagendabucket',
+                Bucket: 'NOMBRE_DEL_BUCKET',
                 Key: key,
                 Body: imagen,
                 ACL: 'public-read',
@@ -30,7 +30,7 @@ class imageRepository {
                 if(err){
                     reject(err);
                 }
-                resolve(`https://mysqlagendabucket.s3.amazonaws.com/${key}`);
+                resolve(`https://NOMBRE_DEL_BUCKET.s3.amazonaws.com/${key}`);
             });
     
         })
@@ -39,7 +39,7 @@ class imageRepository {
     async deleteImage(key){
 
         const params = {
-            Bucket: 'mysqlagendabucket',
+            Bucket: 'NOMBRE_DEL_BUCKET',
             Key: key
         }
 
