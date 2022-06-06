@@ -7,7 +7,7 @@
             <div class="card-body">
                 {{#each agenda}}
                 <label class="form-label">Cambiar imagen ({{this.imagen}})
-                    <img src="https://mysqlagendabucket.s3.amazonaws.com/{{this.imagen}}" alt="" width="250px"
+                    <img src="https://NOMBRE_DEL_BUCKET.s3.amazonaws.com/{{this.imagen}}" alt="" width="250px"
                 height="150px">
                 </label>
                 <form action="/agenda/updateImage{{this.id}}" method="post" enctype="multipart/form-data">
