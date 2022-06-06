@@ -69,4 +69,4 @@ npm run dev
 
 > Crud
 
-![](docs/crud.png)
+![](docs/crudv2.png)
