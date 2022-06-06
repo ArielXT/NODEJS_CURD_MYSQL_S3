@@ -1,0 +1,70 @@
+body {
+	font-family: 'Patrick Hand SC', cursive;
+	background-image: url("/img/shibuya.png");
+	font-size: 20px;
+}
+
+.table{
+	color: rgb(255, 255, 255);
+	background-color: rgba(0, 0, 0, 0.527);
+	font-size: 20px ;
+}
+table:hover{
+	color: rgb(166, 168, 41);
+	font-size: 23px ;
+}
+#eso{
+	background-color:rgba(0, 0, 0, 0.521);
+	
+}
+
+.navbar-nav{
+   background-color:rgba(47, 44, 139, 0.404);
+	font-size: 22px;
+}
+
+.navbar-light .navbar-brand {
+    color:rgba(255, 255, 255, 0.76);
+	font-size: 25px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color:rgba(255, 255, 255, 0.801);
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: rgb(184, 104, 29);
+}
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+	
+}
+.carousel-caption {
+	bottom: 100px;
+	background-color: rgba(0, 0, 0, 0.733);
+	
+}
+.carousel-caption h5 {
+	font-size: 38px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+	font-family: merienda;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 23px;
+	line-height: 1.9;
+	font-family: poppins;
+}
+.carousel-caption a {
+	text-transform: uppercase;
+	background: #262626;
+	padding: 10px 30px;
+	display: inline-block;
+	color: #fff;
+	margin-top: 15px;
+}
+

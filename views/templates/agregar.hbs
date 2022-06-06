@@ -1,0 +1,36 @@
+<div class="row m-0 justify-content-center align-items-center vh-100 agenda">    
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header">
+                INGRESAR DATOS DE LA PERSONA
+            </div>
+            <div class="card-body">
+                <form action="/agenda/agregar" method="POST">
+                    <div class="form-group">
+                        <label for="id">ID:</label>
+                        <input type="text" name="id" id="id" value="" class="form-control" placeholder="id">
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" value="" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="apellido" id="apellido" value="" placeholder="Apellido" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo:</label>
+                        <input type="text" name="correo" id="correo" value="" class="form-control" placeholder="Correo">
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha_nac">Fecha de Nacimiento:</label>
+                        <input type="text" name="fecha_nac" id="fecha_nac" value="" class="form-control" placeholder="fecha_nac">
+                    </div>
+                    <div class="form-group" align="center">
+                        <button type="submit" class="btn btn-success">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

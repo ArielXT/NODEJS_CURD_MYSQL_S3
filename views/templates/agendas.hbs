@@ -1,0 +1,48 @@
+<div class="row m-0 justify-content-center align-items-center vh-100 agenda">
+  <div class="container mt-5">
+    <h1 class="h1 pb-2 text-center text-white">Sistema de Agenda</h1>
+    <div class="table-responsive">
+      <table class="table table-dark text-center table-striped table-hover table-bordered" border="1">
+        <thead>
+          <tr class="thead-dark">
+            <th scope="col">ID</th>
+            <th scope="col">NOMBRE</th>
+            <th scope="col">APELLIDO</th>
+            <th scope="col">CORREO</th>
+            <th scope="col">FECHA DE NACIMIENTO</th>
+            <th scope="col">IMAGEN</th>
+            <th scope="col">OPCIONES</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each agenda}}
+          <tr class="align-middle">
+            <th scope="row">{{this.id}}</th>
+            <td>{{this.nombre}}</td>
+            <td>{{this.apellido}}</td>
+            <td>{{this.correo}}</td>
+            <td>{{{this.fecha_nac}}}</td>
+            <td>
+              <img src="https://mysqlagendabucket.s3.amazonaws.com/{{this.imagen}}" alt="" width="250px"
+                height="150px">
+            </td>
+            <td>
+              <a href="/agenda/editar/{{this.id}}" class="btn btn-sm btn-warning">Editar</a>
+              <form action="/agenda/eliminar{{this.id}}" method="post">
+                  <input type="text" hidden="true" id="imagendelete" name="imagendelete" value="{{this.imagen}}">
+                  <br>
+                  <input type="submit" class="btn btn-sm btn-danger" role="button" value="Eliminar"  >
+                </form>
+              <a href="/agenda/uploadImage{{this.id}}" class="btn btn-sm btn-primary">Agregar imagen</a>
+              <a href="/agenda/updateImage{{this.id}}" class="btn btn-sm btn-success">Editar imagen</a>
+            </td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+      <center>
+        <a href="/agenda/agregar" class="btn btn-lg btn-primary">Agregar Usuario</a>
+      </center>
+    </div>
+  </div>
+</div>
